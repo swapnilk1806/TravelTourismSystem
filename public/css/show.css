@@ -1,0 +1,436 @@
+.sk {
+    font-family: sans-serif;
+}
+
+.cls-top {
+    display: flex;
+}
+
+.cls-outter {
+    /* border: 1px solid black; */
+    height: 450px;
+    width: 83%;
+    margin: auto;
+}
+
+
+.cls-top-left {
+    /* border: 1px solid rebeccapurple; */
+    width: 70%;
+}
+
+.name-cls {
+    margin: 14px 4px 0 40px;
+    padding: 3px 7px 3px 7px;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 1px solid orange;
+    display: inline-block;
+    color: orange;
+    border-radius: 3px;
+
+}
+
+.name-cls span {
+    background-color: orange;
+    color: white;
+    padding: 3px 7px 3px 7px;
+    /* display: inline-block; */
+}
+
+
+.main-cls {
+    margin: 15px 0px 0 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.cl-info {
+    margin: 3px 0 0 40px;
+    font-size: 12px;
+}
+
+
+.cls-top-middle {
+    /* border: 1px solid black; */
+    height: 100px;
+    width: 15%;
+}
+
+
+.deal-supper {
+    font-weight: bold;
+    margin: 17px 0 0 14px;
+    font-size: 13px;
+    color: rgb(63, 157, 63);
+}
+
+.name-cls-price {
+    font-size: 9px;
+    margin: auto;
+    /* opacity: 0.8; */
+    color: rgb(67, 64, 64);
+}
+
+.name-cls-price span {
+    font-size: 19px;
+    /* opacity: 1; */
+    margin: 4px 0px 0 17px;
+    color: black;
+}
+
+.per-person {
+    margin: 0 8px 4px 45px;
+    font-size: 9px;
+}
+
+.a-name-account {
+    font-size: 11px;
+    margin: auto;
+}
+
+.cls-top-right {
+    text-align: center;
+    width: 15%;
+    /* border: 1px solid green; */
+}
+
+.cls-top-right button {
+    margin-top: 25px;
+    font-size: 13px;
+    /* font-weight: bold; */
+    background-color: yellow;
+    border: none;
+    text-align: center;
+    padding: 6px 20px;
+}
+
+.cls-top-right p {
+    font-size: 12px;
+    color: aqua;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+.cls-top-right p:hover {
+    background-color: rgb(175, 169, 181);
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.cls-middle {
+    /* border: 1px solid black; */
+    height: 450px;
+    display: flex;
+}
+
+
+.img-cls {
+    display: inline-block;
+    width: 65%;
+    height: 410px;
+    display: inline-block;
+    /* border: 1px solid brown; */
+    /* height: 450px; */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.cls-middle-main {
+    text-align: center;
+    display: inline-block;
+    /* border: 1px solid red; */
+    width: 35%;
+    height: 100%;
+}
+
+.cls-middle-main p {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    /* color: rgb(114, 239, 92) */
+}
+
+.cls-sub {
+    display: flex;
+}
+
+
+.cls-middle-left {
+    text-align:left;
+    margin-left: 35px;
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 150px;
+}
+
+
+.cls-middle-right {
+    text-align: left;
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 150px;
+}
+
+#ravdi {
+    font-size: 19px !important;
+    margin: 5px 0px 0 12px;
+    font-weight: bold;
+    color: rgb(12, 12, 149);
+}
+
+#Happy {
+    margin: 5px 15px 3px 10px;
+    color: rgb(71, 67, 67);
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.cls-top-center{
+    text-align: left;
+    font-size: 16px;
+}
+
+.cls-p i{
+    color: yellow;
+    text-shadow: 1px 1px 2px black;
+    margin-left: 43px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+#span-load span{
+    margin-top: 0;
+    font-size: 9px;
+    margin-left: 40px;
+    opacity: 0.7;
+}
+
+#includes{
+    margin-top: 0;
+    font-size: 16px;
+    margin-left: 45px;
+}
+
+.keys-dik{
+    margin-top: 40px;
+}
+
+#vertices{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+li::marker{
+    color: red;
+}
+
+/* ------------------------------------ Tour information --------------------- */
+
+
+.cand-load{
+    margin-top: 100px;
+}
+
+.cand-load h3{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(84, 84, 202);
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+.Information-load{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(84, 84, 202);
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 0;
+    /* text-shadow: 1px 1px 2px rgb(70, 53, 53); */
+}
+
+.to{
+    font-size: 14px;
+    opacity: 0.8;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+.btn-sub-info{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid pink; */
+    text-align: center;
+}
+
+.aai-load1,
+.aai-load2,
+.aai-load3{
+    padding: 10px 25px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid blue;
+    margin: 0;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    /* font-size: 18px; */
+    margin-left: 15px;
+    /* color: white; */
+    color: rgb(84, 84, 202) ;;
+    /* background-color: ; */
+}
+
+.aai-load1{
+    color: white;
+    background-color:rgb(84, 84, 202) ;
+}
+
+.ino-load{
+    margin: auto;
+    height: none;
+    /* border-top: 2px solid blue; */
+    /* height: 500px;    */
+    width: 75%;  
+}
+
+
+.inclusions,
+.Exclusions,
+.preparations{
+    width: 100%;
+    /* height: 100%; */
+    font-size: 15px;
+    display: none;
+    padding: 10px;
+    border-width: 4px 0 0 0;
+    border: 1px solid rgba(16, 192, 171, 0.888);
+    border-radius: 15px;
+}
+
+
+.inclusions{
+    display: block;
+}
+
+.hellow-load{
+    margin-top: 20px;
+}
+
+
+
+.li-link{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 15px;
+    font-size: 17px;
+    opacity: 0.9;
+    /* list-style: circle; */
+}
+
+li::marker{
+    color: rgb(214, 31, 15);
+    size: 12px;
+}
+
+
+/* ---------------------- Upgrade Available----------------------------- */
+
+.main-camm{
+    margin-top: 70px !important;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 70px;
+    /* border: 1px solid black; */
+}
+
+.Upgrades{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(84, 84, 202);
+    text-shadow: 1px 1px 1px black;
+     margin: 10px;
+ }
+ 
+ .Want{
+    text-align: center;;
+     color: black;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     font-size: 11px;
+     margin: 10px;
+     color: rgb(103, 35, 35);
+     font-weight: bold;
+     opacity: 0.7;
+ }
+ 
+ .camm1,
+ .class-tp{
+     width: 80%;
+     margin-left: 90px;
+     /* border: 1px solid skyblue; */
+     height: 40px;
+
+ }
+
+ .class-tp{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid skyblue;
+ }
+     /* border: 1px solid black;
+ 
+ 
+ /* .class-tp{
+     border-radius: 5px;
+     height: 40px;
+     border: 2px solid rgb(167, 135, 197);
+ } */
+ 
+ .Flight,
+ .prime{
+     padding: 10px 60px;
+     border-radius: 10px 10px 0 0;
+     font-size: 15px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     border: 1px solid rgb(62, 62, 219);
+     color: rgb(62, 62, 219) ;
+     margin-left: 15px;
+     font-weight: bold;
+ }
+ 
+ .Flight{
+    background-color: rgb(99, 99, 222) ;
+    color: white;
+ }
+ 
+ 
+ .tp2{
+     display: none;
+ }
+ 
+ .link-top{
+     font-size: 18px; 
+ }
+ 
+ #mb{
+     font-weight: bold;
+     color:rgb(38, 38, 230);
+ }
+ 
+ li::marker{
+     color: red;
+ }
+
+ .kada-kaaram{
+    margin-bottom: 70px;
+ }

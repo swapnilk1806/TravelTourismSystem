@@ -1,0 +1,144 @@
+
+
+
+.short-loader {
+    display: flex;
+    /* border: 1px solid #ff0000; */
+    height: 220px;
+    width: 890px;
+    margin: auto;
+    margin-top: 50px !important;
+}
+
+
+.img-short {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.name{
+    font-size: 9px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px 0 5px 5px;
+    margin-left: 25px;
+    display: inline-block;
+    font-weight: bold;
+    color: skyblue;
+    border-radius: 7px;
+    border: 1px solid skyblue;
+}
+
+.name span{
+    background-color: skyblue;
+    color: white;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.short-heading {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 1px black;
+    opacity: 0.8;
+}
+
+
+.name-i i {
+    text-shadow: 1px 1px 1px black;
+    color: yellow;
+    margin-left: 25px;
+}
+
+.shoter-load i {
+    margin-top: 30px;
+    color: rgba(40, 31, 31, 0.637);
+    margin-left: 25px;
+}
+
+.shoter-load span {
+    font-weight: bold;
+}
+
+.call-now {
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+.call-now span {
+    font-weight: bold;
+    color: rgb(46, 46, 172);
+}
+
+/* .Compare{
+    position: absolute;
+    
+    /* top: 78px;
+    left: 9px; */
+/* } */
+
+
+.right-shoter {
+    margin-left: 15px;
+    width: 28%;
+    /* border: 1px solid black; */
+}
+
+.indio-hellow{
+     text-align: center;
+}
+
+
+.starts{
+    margin-bottom: 0;
+    text-align: end;
+    margin-top: 45px;
+    margin-right: 10px;
+    color: rgb(26, 146, 26);
+}
+
+.Price-load{
+    margin-top: 0;
+    text-align: end;
+    margin-right: 10px;
+    font-size: 18px;
+    margin-bottom: 0;
+   font-weight: bold;
+}
+
+.persion{
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+    opacity: 0.8;
+    text-align: end;
+    margin-right: 10px;
+}
+
+.viewport{
+    margin-top: 8px;
+    border-radius: 9px;
+    background-color: yellow;
+    font-size: 16px;
+     border: 1px solid yellow;
+     padding: 10px 60px;
+     margin-left: 25px;
+     /* text-align: end;
+     margin-right: 20px; */
+}
+
+.viewport-e{
+    border: 1px solid black;
+    border-radius: 9px;
+    padding: 10px 66px;
+    margin-top: 6px;
+    margin-left: 25px ;
+}

@@ -1,0 +1,139 @@
+
+/* -------------------------------------------------------header part------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cont-saw{
+    background-color: rgb(15, 8, 8);
+    justify-content: space-around;
+    display: flex;
+    height: 80px;
+    /* border: 1px solid red; */
+}
+
+.logo-phoyo{
+
+    text-align: center;
+    width:25%;
+  /* border: 1px solid black; */
+}
+
+.input-search{
+    /* margin: auto; */
+    padding-left: 45px;
+    width: 40%;
+    /* border: 1px solid black; */
+}
+
+.i-logo{
+    width: 37%;
+    /* border: 1px solid black; */
+}
+
+/* .logo-phoyo h1{
+    /* font-family: k; */
+    /* font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 23px;
+} */ 
+
+/* .mystery-quest-regular {
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+   */
+
+   .input-search input{
+    text-align: center;
+      width: 88%;
+      height: 45px;
+      /* text-shadow: 1px 1px 1px rgb(18, 15, 223); */
+      padding: 0;
+      border-radius: 15px;
+      outline: none;
+      color: black;
+      border: none;
+      margin-top: 14px;
+      /* color: green; */
+      font-weight: bold;
+      /* color: white; */
+      font-family:Georgia, 'Times New Roman', Times, serif;
+   }
+
+
+   .upper-i-logo{
+    margin-top: 15px;
+    display: flex;
+     justify-content: space-around;
+   }
+
+.upper-i-logo span{
+    color: white;
+}
+   .lower-i-logo{
+
+    display: flex;
+    /* justify-content: space-around; */
+   }
+
+.call{
+    color: white;
+    margin-top: 4px;
+    margin-left: 55px;
+}
+
+.Wishlist{
+    color: white;
+    margin-top: 4px;
+    margin-left: 95px;
+}
+
+.Notifications{
+    color: white;
+    margin-top: 4px;
+    margin-left: 70px;
+}
+
+.Sign{
+    color: white;
+    margin-top: 4px;
+    margin-left: 65px;
+}
+
+.header-left-sub{
+    background-color: rgb(30, 30, 38);
+}
+
+.middle-sub-part{
+    color: white;
+    width: 78%;
+    margin: auto;
+    display: flex;
+    font-size: 16px;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.middle-sub-part p{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.middle-sub-part span{
+    /* position: absolute; */
+    /* top: 8px; */
+    /* margin-top: 6px; */
+}
+
+.middle-sub-part button{
+    background: transparent;
+    border: none;
+    color: white;
+}

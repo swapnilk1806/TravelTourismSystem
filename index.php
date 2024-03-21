@@ -4,21 +4,15 @@ require 'Router.php';
 
 $router = new Router();
 $router->get('/', function(){
-    @include("views/home.php");
+    @include("views/main-page/index.php");
 });
 
 $router->get('/about', function(){
-   echo "About";
+    @include("views/main-page/show.php");
 });
 
-$router->post('/create', function(){
-    echo "Create";
-});
-
-
-$router->get('/user/:id', function($params){
-    
-    echo $params['id'];
+$router->get('/app', function(){
+    @include("views/main-page/allshow.php");
 });
 
 

@@ -13,8 +13,6 @@ class Router{
         $uri = trim($_SERVER['REQUEST_URI'], $this->trim);
         $this->server_method = strtolower($_SERVER['REQUEST_METHOD']);
         $this->server_uri = explode('/', $uri);
-
-        echo $uri;
     }
     
     
@@ -75,8 +73,6 @@ class Router{
         if($matched){
             $this->callback = $callback;
             $this->matched = true;
-        }else{
-            echo "<h1> 404 Found </h1>";
         }
     }
 

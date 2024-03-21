@@ -1,0 +1,948 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------------middle page----------------------------------------------------------- */
+.love-logo{
+    /* margin-top: 20px !important; */
+    text-align: center;
+    /* border: 1px solid black ; */
+    width: 80%;
+    height: 100px;
+    margin: auto;
+
+    object-fit: cover;
+}
+.card-top{
+    height: 500px;
+    background: url(../../image/indexpagephoto/main.avif);
+}
+.card1{
+    /* border: 1px solid rgb(215, 78, 197); */
+    height: 190px;
+    width: 255px;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: white;
+    margin: 10px;
+    /* position: absolute; */
+    /* top: 200px; */
+}
+
+.card-photo{
+    margin-top: 40px;
+    margin-left: 50px;
+   /* position: absolute;
+   top: 145px;
+   left: 50px; */
+}
+
+
+.img-page-loade{
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+    background-size: cover;
+}
+
+
+#Womens{
+    font-size: 16px;
+    margin: 0 10px 0;
+    /* font-family: sans-serif; */
+    padding: 0;
+    font-weight: bold;
+    color:rgb(14, 14, 105);
+}
+
+
+#rstop{
+    margin: 0 10px 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: inline-block;
+    color: rgb(91, 37, 142);
+}
+
+
+#dept{
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 0 25px;
+    /* font-family: sans-serif; */
+}
+
+.Explore{
+    padding: 7px 25px;
+    border: none;
+    margin-top: 8px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: rgba(217, 220, 30, 0.838);
+    position: absolute;
+    top: 360px;
+    left: 600px;
+    
+}
+
+
+#logoDH{
+    margin-top: 20px;
+    text-align: center;
+    width: 600px
+}
+
+
+/* ----------------------------------------- RATING BOX CSS ----------------------------------- */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.rating-upper{
+    border: 1px solid rgba(50, 50, 114, 0.792);
+    background-color: rgb(36, 36, 70);
+    height: 480px;
+    text-align: center;
+}
+
+.sub-rating{
+    display: flex;
+}
+
+.rating-card{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid black; */
+    height: 250px;
+}
+
+.rating-sub{
+    background-color: white;
+    margin-left: 30px;
+    height: 250px;
+    width: 420px;
+    border-radius: 8px;
+}
+
+
+.card-r{
+    width: 30%;
+    border: 1px solid yellow;
+    height: 250px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#Hellows{
+    font-size: 26px;
+    color: white;
+    font-weight:bold ;
+    margin-top: 45px;
+    margin-bottom: 8px;
+    
+}
+
+#ratingq{
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: white;
+}
+
+
+#Reviews{
+    margin-top: 30px;;
+    padding: 10px 35px;
+    background-color: yellow;
+    border: none;
+    border-radius: 15px;
+}
+
+#lohorating{
+   border: 1px solid rgb(185, 18, 174);;
+   display: inline-block;
+   padding:0 10px;
+   color:  rgb(185, 18, 174);;
+   /* font-weight: bold; */
+   border-radius: 5px;
+   margin-top: 10px;
+   margin-right: 240px;
+}
+
+
+#tamiltrip{
+    /* color: red; */
+    margin-top: 8px;
+    font-weight: bold;
+    /* font-family: 'Courier New', Courier, monospace; */
+    opacity: 0.9;
+    font-size: 25px;
+    margin-right: 260px;
+}
+
+
+.comments{
+    width: 380px;
+    margin: auto;
+    border-radius: 15px;
+    margin-top:11px;
+    /* height: 200px; */
+}
+
+#tour{
+    margin-top: 15px;
+    margin-right: 260px;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+#traveltour{
+   font-size: 15px;
+}
+ 
+
+/* ---------------------------------------- short cards ---------------------------------------------- */
+
+.classwapn{
+    display: inline-block;
+    width: 80%;
+    margin: auto;
+}
+
+
+.main-adds{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.sub-adds{
+    border: 1px solid black;
+    height: 510px !important;
+    /* width: 500px !important; */
+    width: 35%;
+    /* width: 300px !important; */
+    background: url(../../image/indexpagephoto/photo.avif);
+    background-size: cover;
+    margin-left: 70px;
+    border-radius: 15px;
+}
+
+.sub-adds-right{
+    width: 1100px !important;
+    /* border: 1px solid blue; */
+    /* margin-left: 40px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: none
+    ;
+}
+
+.card-adds{
+    background-size: cover !important;
+    /* border : 1px solid black; */
+    height: 220px;
+    width: 200px;
+    margin-left: 25px;
+    margin-top: 10px;
+    border-radius: 18px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* img{
+    width: 100%;
+    height: 100%;
+} */
+
+/* .card-adds:hover{
+    box-shadow: 2px 2px 4px black;
+} */
+
+#headtop{
+    font-size: 20px;
+    font-weight: bold; 
+     color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.top-upper-side{
+    background-color: rgb(208, 212, 215);
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-top: 160px;
+    padding: 5px;
+}
+#head-upper{
+    margin: 0;
+    padding: 0;
+}
+ 
+
+
+/* #headtop:hover{
+    /* box-shadow: 3px 3px 6px black; */
+    /* font-size: 27px; */
+/* } */
+
+  /* ---------------------------------------- 4 cards -------------------------------------------- */
+
+
+  
+.header-load{
+    margin: auto;
+    text-align: center;
+}
+
+
+#Discover{
+     font-size: 25px;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-style: oblique;
+     font-weight: bold; 
+     color: rgb(21, 70, 194);
+     text-shadow: 2px 3px 5px red;
+}
+
+
+.cont-pi{
+    width: 83%;
+    height: 450px;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+}
+
+.pi-left{
+    width: 30%;
+    /* border: 1px solid red; */
+    height: 100%;
+}
+
+
+
+.rpi-sub1,
+.rpi-sub2,
+.rpi-sub3,
+.rpi-sub4,
+.rpi-sub5{
+    display: inline-block;
+    font-weight: bold;
+   color: rgb(59, 59, 164);
+    margin-top: 14px !important;
+    border-radius: 10px;
+    border: none;
+    height: 49px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    border: 1px solid  rgb(59, 59, 164) ;
+}
+
+
+.rpi-sub1{
+    background-color:rgb(59, 59, 164); ;
+    color: white;
+}
+
+.pi-right{
+    /* display: inline-block; */
+    display: flex;
+    height: 100%;
+    width: 70%;
+    /* border: 1px solid brown; */
+}
+
+/* ----------------------------------layputs 2 ------------------------------------------------ */
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.sub-card {
+    margin: 35px;
+    width: 410px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+#heading-sub-top {
+    display: flex;
+}
+
+.header-card {
+    display: flex;
+}
+
+.card-top-right {
+    margin-left: 5px;
+}
+
+.symbols i {
+    color: rgb(75, 23, 196);
+    margin-left: 16px;
+}
+
+#group-tour {
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid orange;
+    padding: 2px;
+    color: orange;
+    border-radius: 10px;
+    /* margin-top: 0; */
+    display: inline-block;
+}
+
+
+
+
+#group-tour span {
+    background-color: orange;
+    color: white;
+    padding: 3px;
+}
+
+.img-top {
+    width: 150px;
+    height: 120px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin: 10px;
+}
+
+#Seniars {
+    border: 1px solid rgb(157, 7, 125);
+    display: inline-block;
+    padding: 5px;
+    font-size: 12px;
+    color: rgb(157, 7, 125);
+    font-weight: bold;
+}
+
+#card-heading {
+    margin-left: 3px;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 1px;
+    font-size: larger;
+}
+
+#heart{
+    color: red;
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.bottom-card span{
+    margin-left: 10px;
+}
+
+.bottom-card i{
+    margin-right: 10px;
+}
+
+
+.short-card{
+    display: flex;
+}
+.div-first{
+    /* border: 1px solid red; */
+    width: 50%;
+}
+
+
+.divsecound{
+    text-align: end;
+}
+
+#rading-sy{
+    border: 1px solid red;
+    color: white;
+    background-color: orange;
+    display: inline-block;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+#ruppes{
+    font-size: 22px;
+    color: rgb(72, 99, 206);
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+#super{
+    font-weight: bold;
+    color: rgb(49, 230, 25);
+    font-size: 17px;
+}
+
+
+#Enquire{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 13px;
+    border-radius: 5px;
+}
+
+
+#Views{
+    outline: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 13px;
+    border: 1px solid black;
+    background-color: yellow;
+    font-size: 17px;
+    border: 1px solid ;
+    color: black;
+    border-radius: 5px;
+}
+
+#pp{
+    margin: 0;
+    padding: 0;
+}
+
+#ppp{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    color: brown;
+}
+
+
+/* ------------------------------------------- BOX 3 DESIGN ---------------------------------------- */
+
+.clas{
+    text-align: center;
+}
+
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.tittle-sub-cand{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(6, 242, 242);
+    text-shadow: 1px 1px 1px rgb(234, 10, 10);
+    font-style: oblique;
+    text-decoration: underline;
+      /* margin: auto; */
+}
+
+.sub-card {
+    margin: 35px;
+    width: 410px;
+    height: 380px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+#heading-sub-top {
+    display: flex;
+}
+
+.header-card {
+    display: flex;
+}
+
+.card-top-right {
+    margin-left: 5px;
+}
+
+.symbols i {
+    color: rgb(238, 246, 12);
+    margin-left: 16px;
+    text-shadow: 1px 1px 3px blue;
+}
+
+#group-tour {
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid orange;
+    padding: 2px;
+    color: orange;
+    border-radius: 10px;
+    /* margin-top: 0; */
+    display: inline-block;
+}
+
+
+
+
+#group-tour span {
+    background-color: orange;
+    color: white;
+    padding: 3px;
+}
+
+.img-top {
+    width: 150px;
+    height: 120px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin: 10px;
+}
+
+#Seniars {
+    border: 1px solid rgb(157, 7, 125);
+    display: inline-block;
+    padding: 5px;
+    font-size: 12px;
+    color: rgb(157, 7, 125);
+    font-weight: bold;
+}
+
+#card-heading {
+    margin-left: 3px;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 1px;
+    font-size: larger;
+}
+
+#heart{
+    color: red;
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.immf-sub {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.bottom-card span{
+    margin-left: 10px;
+}
+
+.bottom-card p{
+    margin-top: 20px;   
+}
+.bottom-card i{
+    margin-right: 10px;
+}
+
+
+.short-card{
+    display: flex;
+}
+.div-first{
+    /* border: 1px solid red; */
+    width: 50%;
+}
+
+
+.divsecound{
+    /* border: 1px solid green; */
+    text-align: end;
+}
+
+#rading-sy{
+    border: 1px solid red;
+    color: white;
+    background-color: orange;
+    display: inline-block;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+#ruppes{
+    font-size: 22px;
+    color: rgb(72, 99, 206);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#super{
+    /* text-align: end; */
+    font-weight: bold;
+    color: rgb(49, 230, 25);
+    font-size: 17px;
+}
+
+
+#Enquire{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 13px;
+    border-radius: 5px;
+}
+
+
+#Views{
+    outline: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 13px;
+    border: 1px solid black;
+    background-color: yellow;
+    font-size: 17px;
+    /* border: 1px solid ; */
+    color: black;
+    border-radius: 5px;
+}
+
+#pp{
+    margin: 0;
+    padding: 0;
+}
+
+#ppp{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    color: brown;
+}
+
+/* -------------------------------------------------- box liting ------------------------ */
+
+
+.sub-box{
+    background: url(https://wallpaperaccess.com/full/807663.jpg);
+    background-size: cover;
+    border: 1px solid black;
+    height: 320px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.sub-box-info{
+    font-size: 24px;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 700px;
+}
+
+#fly{
+    color: white;
+    /* color: yellow; */
+    margin-top: 0;
+    margin-bottom: 8px;
+    /* padding: 0; */
+}
+
+#days{
+    font-size: 15px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+
+#Book{
+    font-size: 17px;
+    background-color: yellow;
+    border:0;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#top-indio{
+    color: white;
+    font-size: 18px;
+    margin-top: 20;
+    margin-left: 180px;
+}
+
+
+
+
+/* -----------------------------------------------4 Direction -------------------------------------- */
+.dik {
+    text-align: center;
+    margin-bottom: 30px;
+    /* border: 1px solid chocolate; */
+    font-size: 30px;
+    /* color: white; */
+    font-weight: bold;
+    /* text-decoration: underline; */
+    text-shadow: 1px 2px 5px rgb(253, 253, 0);
+}
+
+.btn-in {
+    width: 60%;
+    margin: auto;
+}
+
+.state {
+    padding: 12px 30px;
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(27, 27, 100);
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.btn1-i {
+    background-color: rgb(27, 27, 100);
+    ;
+    color: white;
+}
+
+
+.click-1,
+.click-2,
+.click-3,
+.click-4 {
+    /* border: 1px solid rgb(183, 38, 38); */
+    height: 430px;
+    width: 89%;
+    margin-top: 20px !important;
+    margin: auto;
+    display: 'none';
+    display: flex;
+    margin-bottom: 100px;
+    /* display: inline-block; */
+}
+
+
+/* .click-1{
+    display: flex;
+    display: inline-block;
+} */
+
+.sub-load1,
+.sub-load2,
+.sub-load3,
+.sub-load4{
+    text-align: center;
+    padding: 10px;
+    /* border: 1px solid blue; */
+    width: 23%;
+    height: 100%;
+    display:inline-block;
+}
+
+.sub1-load-upper{
+    /* display: inline-block; */
+    height: 54%;
+    margin-bottom: 30px;
+    /* border: 1px solid green; */
+
+}
+
+.sub1-load-lower{
+    /* display: inline-block; */
+   width: 100%;
+   height: 40%;
+   /* border: 1px solid yellow; */
+}
+
+.ravdi-load{
+    /* display: inline-block; */
+    border-radius: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.swapnil{
+    /* display: inline-block; */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+.load-swa{
+    margin-top: 0;
+    height: 180px !important;
+}
+
+.sub2-load-upper{
+    display: inline-block;
+    height: 35%;
+    /* border: 1px solid yellow; */
+}
+
+.load-swa2{
+    height: 200px;
+    width: 100%;
+}
+
+.sub2-load-lowar{
+    height: 65%;
+  margin-top: 25px;
+}
+
+.load-swa3{
+    height: 200px;
+}
+
+.load-swa-3{
+    height: 230px;
+    margin-bottom: 0;
+}
+
+.load4-swa{
+    height: 435px;
+}
