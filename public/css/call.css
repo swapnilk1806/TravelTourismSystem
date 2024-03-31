@@ -1,0 +1,82 @@
+
+.call-ut{
+    width: 16%;
+    height: 320px;
+    position: absolute;
+    left: 1040px;
+    top: 50px;
+    display: none;
+}
+/* .call-js{
+    padding: 10px 12px;
+    border: none;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+} */
+
+.call-main{
+    margin: auto;
+    border: 1px solid black;
+    /* width: 16% ; */
+    height: 320px;
+    border-radius: 15px;
+    background-color: rgb(168, 145, 190);
+}
+
+
+#call-cg{
+  margin-bottom: 18px;
+}
+
+.call-main header p{
+    margin-top: 19px;
+    font-size: 23px;
+    font-weight: bold;
+    color: orchid;
+    text-shadow: 1px 1px 1px black;
+    /* background-color: rgb(12, 242, 12);     */
+}
+
+
+.cal-p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: cadetblue;
+    margin-bottom: 7px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.call-h3{
+    margin-top: 0;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.nam-cl,
+.call-h4{
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.bl-g{
+    color: cadetblue;
+}
+
+
+.call-h3 i{
+    color: rgb(6, 241, 6);
+    margin-right: 7px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.call-h4 i{
+    color: brown;
+    text-shadow: 1px 1px 1px white;
+    margin-right: 7px;
+}

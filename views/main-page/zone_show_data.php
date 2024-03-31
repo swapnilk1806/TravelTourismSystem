@@ -1,22 +1,25 @@
 <head>
+    <link rel="stylesheet" href="../../public/css/zonepage.css">
     <link rel="stylesheet" href="../../public/css/allshow.css">
 </head>
 
 <?php include('./views/layouts/header.php') ?>
+
+<?php $zone_side = $_GET['name']; ?>
+
+<h2 class="name-zone"><?php echo $zone_side; ?> Zone Indio </h2>
+
 <?php
-
-$tablename= 'middle_card';//$_GET['tablename'];
-
 require('./database_connect.php');
-$query = "SELECT * FROM public.$tablename";
+$query = "SELECT * FROM public.middle_card where zone='$zone_side'";
 $result = pg_query($conn, $query);
-
 ?>
 <div class="short-loader-main">
     <?php while ($row = pg_fetch_assoc($result)) { ?>
+        
         <div class="short-loader">
             <div class="img-short">
-                <!-- <p class="Compare">Compare</p> -->
+                 <!-- <p class="Compare">Compare</p> -->
                 <img src="<?php echo  $row['image'] ?>" alt="">
             </div>
             <div class="sub-shoter">

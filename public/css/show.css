@@ -96,14 +96,18 @@
     /* border: 1px solid green; */
 }
 
+
 .cls-top-right button {
     margin-top: 25px;
     font-size: 13px;
     /* font-weight: bold; */
     background-color: yellow;
-    border: none;
+    border: 1px solid black;
     text-align: center;
-    padding: 6px 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .cls-top-right p {
@@ -234,11 +238,180 @@ li::marker{
     color: red;
 }
 
+/* ------------------------------------ bookin info -------------------------/ */
+.bor-dept {
+    /* border: 1px solid black; */
+    width: 70%;
+    /* height: 600px; */
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0;
+    margin-left: 100px;
+}
+
+.add_swa {
+    font-size: 19px;
+    margin-bottom: 0;
+}
+
+.as-seats {
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.sel_date {
+    margin-top: 50px;
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.departres {
+    border: 1px solid rgb(149, 143, 143);
+    margin-top: 20px;
+    margin-left: 70px;
+    display: inline-block;
+    padding: 8px;
+    font-family: 13px;
+    border-radius: 7px;
+}
+
+
+.departres i {
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.miidle-card {
+    border: 1px solid black;
+    width: 70%;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 60px;
+    display: flex;
+}
+
+.card-left {
+    /* border: 1px solid black; */
+    width: 100px;
+    border-radius: 7px;
+    margin: 10px;
+    height: 80px;
+    display: flex;
+}
+
+.left-card-side {
+    /* border: 1px solid rgb(54, 52, 52); */
+    width: 30%;
+    height: 100%;
+    background-color: rgb(93, 101, 93);
+    border-radius: 7px 0 0 7px;
+}
+
+.left-card-side .p-smaell {
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+.right-card-side {
+    /* border: 1px solid green; */
+    width: 70%;
+    height: 100%;
+    border-radius: 0 7px 7px 0;
+    background-color: rgb(35, 111, 35);
+}
+
+.hrname{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    width: 80%;
+    height: 1px;
+    margin: auto;
+}
+
+.relo-p{
+    font-size: 12px;
+    text-align: center;
+    margin: 10px;
+    color: white;
+    /* font-weight: bold; */
+}
+
+.relo-p-s{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: 6px;
+}
+
+.red{
+    background-color: rgb(187, 64, 64);
+}
+
+.white{
+    background-color: white;
+    color: black;
+    border: 1px solid black ;
+    border-radius: 0 7px 7px 0;
+    height: 98%;
+}
+
+.white p{
+    color: black;
+}
+
+.blue{
+    background-color: rgb(66, 66, 224);
+}
+
+.bor-dept h4{
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.bor-dept span{
+    font-size: 13px;
+    font-style: italic;
+}
+
+.sd-dil{
+    font-size: 12px;
+    font-weight: bold;
+    color: blue;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ksd-swad{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(90, 90, 197);
+}
+
+.ksd-swad span{
+    font-size: 25px;
+    margin-right: 7px;
+    margin-top: 7px;
+}
+
+.info-relo{
+    font-size: 14px;
+    font-weight: 600;
+    /* font-weight: bold; */
+    opacity: 0.8;
+    margin-bottom: 60px;
+}
+
 /* ------------------------------------ Tour information --------------------- */
 
 
 .cand-load{
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 .cand-load h3{
@@ -342,11 +515,232 @@ li::marker{
     size: 12px;
 }
 
+/* -------------------------- Need know ------------------------- */
 
+
+
+.msin-need{
+  /* width: 90%; */
+  margin-top: 30px !important;
+  margin: auto;
+}
+
+.need{
+    margin: auto;
+    width: 80%;
+    /* border: 1px solid black; */
+}
+
+.need h3{
+    font-size: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    margin-bottom: 3px;
+}
+
+.need p{
+    font-style: italic;
+    margin-top: 0;
+    margin-left: 30px;
+}
+
+.need h4{
+    margin-left: 30px;
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-weight: bold;    */
+}
+
+.need h5{
+    margin-top: 13px;
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+
+.need li{
+    margin-left: 80px;
+    margin-top: 15px;
+}
+
+li::marker{
+    color: red;
+}
+
+/* ------------------------------------------- cancelation -------------- */
+
+.can-load {
+    /* border: 1px solid black; */
+    margin: auto;
+    width: 85%;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* margin-left: 30px; */
+}
+
+.can-load h3 {
+    /* font-weight: 500; */
+    margin-left: 30px;
+    margin-bottom: 8px;
+}
+
+.can-load p {
+    margin-top: 0;
+    font-style: italic;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.div-can {
+    /* border: 1px solid black; */
+    width: 70%;
+    height: 170px;
+    margin-left: 80px;
+}
+
+.cans-div1,
+.cans-div2 {
+    width: 100%;
+    height: 50%;
+    margin-left: 30px;
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.cans-div1 {
+    display: flex;
+    border-radius: 20px 20px 0 0;
+    border-bottom: none;
+}
+
+
+.cans-div2{
+    border-radius: 0 0 20px 20px;
+}
+
+.cand-swa1,
+.cand-swa2{
+    width: 35%;
+    height: 100%;
+    background-color: rgb(56, 56, 161);
+}
+
+.cand-swa1{
+    border-radius: 20px 0 0 0;
+}
+
+.cand-swa2{
+    border-radius: 0 0 0 20px;
+}
+
+.cand-swa1 p,
+.cand-swa2 p{
+    padding-top: 20px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* font-weight: 500; */
+    /* font-style: normal; */
+    color: white;
+}
+
+
+.cand-right-upper{
+    width: 65%;
+    /* border: 1px solid black; */
+}
+
+.uupper{
+    width: 90%;
+    padding-top: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin: auto;;
+    height: 40%;
+    /* border: 1px solid red; */
+    display: flex;
+     font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-around;
+}
+
+
+.llower{
+    margin: auto;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.zero{
+    margin-left: 8px;
+    margin-bottom: 15px !important;
+}
+
+
+.cand-right-lower{
+    width: 65%;
+}
+
+.loower-sb{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+     /* margin-left: 20px !important;  */
+     margin-top: 30px !important;
+        margin: auto;
+}
+
+.load-sub{
+    margin-top: 30px;
+    /* width: 85%; */
+    margin-left: 30px;
+}
+.can-load h5{
+    font-size: 14px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    margin-left: 30px;
+    margin-top: 30px !important;
+    margin-bottom: 7px;
+}
+
+.can-load p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+
+li::marker{
+    color: red;
+}
+
+.can-load li{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    margin-bottom: 10px;
+}
+
+.name-dik-h{
+    margin-top: 30px;
+}
+
+/* .name-dik-h p,
+.name-dik-h li{
+    margin-left: 70px;
+    color: red;
+} */
+
+#swsa{
+    margin-left: 70px;
+    /* color: red; */
+    color: black;
+    margin-top: 20px;
+    font-size: 15px;
+}
 /* ---------------------- Upgrade Available----------------------------- */
 
 .main-camm{
-    margin-top: 70px !important;
+    margin-top: 30px !important;
     width: 85%;
     margin: auto;
     margin-bottom: 70px;
@@ -434,3 +828,70 @@ li::marker{
  .kada-kaaram{
     margin-bottom: 70px;
  }
+
+
+
+
+ /* --------------------------------last image  cards --------------- */
+
+ .kdh {
+    text-align: center;   
+    /* margin: auto; */
+}
+
+.hacks{
+    font-style:italic;
+    font-size: 25px;
+    /* text-decoration: wavy; */
+    /* font-weight: bold; */
+    text-shadow: 1px 1px 1px black;
+}
+
+.load-skw {
+    /* border: 1px solid black; */
+    width: 85%;
+    display: flex;
+    margin-top: 30px !important;
+    margin: auto;
+    /* margin: auto */
+}
+
+.cards-sub-load {
+    /* margin: auto; */
+    /* border: 1px solid black; */
+    height: 200px;
+    width: 230px;
+    margin: auto;
+    border-radius: 16px;
+}
+
+.img-dik{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.lodo-info{
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-weight: bold; */
+}
+
+.lodo-info p{
+    width: 230px;
+}
+
+.Hotels{
+    margin-left: 125px !important;
+}
+
+.lodo-info p{
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+
+
+/* ------------------------------ contact --------------------------- */
+

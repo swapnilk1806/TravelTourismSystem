@@ -1,148 +1,157 @@
+/* Importing Google font - Open Sans */
 
-/* ------------------------------------------------------footer ---------------------------------- */
+::-webkit-scrollbar {
+    width:0;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.main-footer {
-    height: 500px;
-    background-color: rgb(34, 49, 79);
-    border: 1px solid black;
-}
-
-.footer-sub {
-    margin: auto;
-    width: 86%;
-    display: flex;
-    height: 48%;
-    /* border: 1px solid white; */
-}
-
-#footer-tp {
-    margin-top: 70px;
-    margin-left: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#footer-tp-1 {
-    margin-top: 4px;
-    margin-left: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.footer-left {
-    width: 36%;
-    /* border: 1px solid red; */
-}
-
-.give input {
-    outline: none;
-    padding: 9px 12px;
-    border: 1px solid white;
-    background-color: transparent;
-    /* color: white; */
-    color: aqua;
-    border-radius: 10px;
-    font-size: 15px;
-    margin-top: 7px;
-    margin-left: 15px;
-}
-
-
-#Subscribedh {
-    padding: 6px 25px;
-    font-size: 15px;
-    background-color: yellow;
-    border: none;
-    border-radius: 7px;
-    margin-left: 6px;
-}
-
-.middle-footer{
-    width: 20%;
-}
-.hpp{
-    margin-top: 25px;
-    margin-left: 15px;
-    font-weight: bold;
-    font-size: 21px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-}
-
-
-.us{
-    font-size: 14px;
-    font-family: sans-serif;
-    /* font-weight: bold; */
-    color: white;
-    margin-left: 15px;
-    margin-top: 6px;
-}
-
-
-.hpp:hover{
-    color: rgb(243, 243, 8);
-}
-
-.us:hover{
-    color: rgb(243, 243, 8);
-}
-
-.us span{
-    color: rgb(24, 181, 195);
-}
-
-.us span:hover{
-    color: yellow;
-}
-
-
-#swsa{
-    color: white;
-    opacity: 0.9;
-    width: 86%;
+.hellow-swap{
+    width: 80%;
     margin: auto;
 }
 
+.footer {
+  max-width: 100%;
+  width: 100%;
+  background: #10182F;
+  border-radius: 6px;
+}
 
-#kda{
-    margin: auto;
-    width: 86%;
-    opacity: 0.8;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: white;
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
 }
 
 
-#kda span{
-    font-size: 16px;
-    font-weight: bold;
+body{
+  min-height: 100vh;
 }
 
-
-.mda{
-    opacity: 0.6;
-    margin-top: 10px;
-    width: 86%;
-    margin: auto;
-    display: flex;
-    color: white;
-    font-size: 12px;
-    justify-content: space-between;
+.footer{
+  position: sticky;
+  top: 100%;
 }
 
-
-.mda i{
-    margin-right: 5px;
+.footer-col{
+  margin-left: 90px !important;
 }

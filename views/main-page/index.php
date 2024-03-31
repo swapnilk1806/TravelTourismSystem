@@ -1,50 +1,42 @@
+    <?php
+    $tablename1 = 'top_card';
+    $tablename2 = 'short_card';
+    $tablename3 = 'middle_card';
+    $tablename4 = '';
+    require('./database_connect.php');
+
+    $query = "SELECT * FROM public.$tablename1;";
+    $query2 = "SELECT * FROM public.$tablename2;";
+    $query3 = "SELECT * FROM public.$tablename3;";
+    $query4 = "SELECT * FROM public.feedback;";
+
+    $result = pg_query($conn, $query);
+    $result2 = pg_query($conn, $query2);
+    $result3 = pg_query($conn, $query3);
+    $result4 = pg_query($conn, $query4);
     
+    ?>
+
+
     <?php include('./views/layouts/header.php') ?>
-    
-   
+
+
     <div class="card-top">
         <div class="love-logo">
             <img id="logoDH" src="../../image/indexpagephoto/tittle.svg" alt="">
 
         </div>
         <div class="card-photo">
-            <div class="card1">
-                <img class="img-page-loade"
-                    src="https://media-cdn.tripadvisor.com/media/photo-s/1b/62/f3/bc/rajgad-fort-view.jpg" alt="">
-                <p id="Womens">Women's Special Udaipur</p>
-                <p id="rstop">&#8377 456674</p>
-                <p id="dept">5 Days|5 Departure</p>
-            </div>
-            <div class="card1">
-                <img class="img-page-loade"
-                    src="https://3.bp.blogspot.com/-EBZqy2mMLT8/UsJsxiFOOUI/AAAAAAAAAss/ztHXC46ABIw/s1600/Temples-in-Goa.jpg"
-                    alt="">
-                <p id="Womens">Women's Special Udaipur</p>
-                <p id="rstop">&#8377 456674</p>
-                <p id="dept">5 Days|5 Departure</p>
-            </div>
-            <div class="card1">
-                <img class="img-page-loade"
-                    src="https://scontent.ccdn.cloud/image/vivitravels-en/bbacc6e9-4463-4de5-a27b-8f085ff9cdff/maxw-960.jpg"
-                    alt="">
-                <p id="Womens">Women's Special Udaipur</p>
-                <p id="rstop">&#8377 456674</p>
-                <p id="dept">5 Days|5 Departure</p>
-            </div>
-            <div class="card1">
-                <img class="img-page-loade"
-                    src="https://i.pinimg.com/originals/4f/e5/a5/4fe5a5258941b606d0269a9ad59068bd.jpg" alt="">
-                <p id="Womens">Women's Special Udaipur</p>
-                <p id="rstop">&#8377 456674</p>
-                <p id="dept">5 Days|5 Departure</p>
-            </div>
-            <div class="card1">
-                <img class="img-page-loade" src="https://www.unciatrails.com/wp-content/uploads/2020/07/Taj2.jpg"
-                    alt="">
-                <p id="Womens">Women's Special Udaipur</p>
-                <p id="rstop">&#8377 456674</p>
-                <p id="dept">5 Days|5 Departure</p>
-            </div>
+            <?php while ($row = pg_fetch_assoc($result)) { ?>
+                <a href="get-show-info/?id=<?php echo $row['id'] ?>/hellow/?$tablename1=<?php echo $tablename1 ?>">
+                    <div class="card1">
+                        <img class="img-page-loade" src="<?php echo $row['image'] ?>" alt="<?php echo $row['image'] ?>">
+                        <p id="Womens"><?php echo $row['name'] ?></p>
+                        <p id="rstop">&#8377 <?php echo $row['amount'] ?></p>
+                        <p id="dept"><?php echo $row['duration'] ?>Days| <?php echo $row['departure'] ?> Departure</p>
+                    </div>
+                </a>
+            <?php } ?>
         </div>
         <!-- <button class="Explore">Explore more tours</button> -->
     </div>
@@ -56,71 +48,19 @@
         <div class="sub-adds">
         </div>
         <div class="sub-adds-right">
-            <div class="card-adds"
-                style="background: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/4a/b0/37/cartoline-da-old-goa.jpg?w=1200&h=1200&s=1);">
-                <p id="headtop">Maharashtra</p>
-                <div class="top-upper-side">
-                    <p id="head-upper">28 Tours | 283 departures</p>
-                    <p id="head-upper">48180 gueste Travelled</p>
-                </div>
-            </div>
-            <div class="card-adds"
-                style="background: url(https://im.whatshot.in/img/2020/Oct/istock-186841221-1603361397.jpg);">
-                <p id="headtop">Maharashtra</p>
-                <div class="top-upper-side">
-                    <p id="head-upper">28 Tours | 283 departures</p>
-                    <p id="head-upper">48180 gueste Travelled</p>
-                </div>
-            </div>
-            <div class="card-adds"
-                style="background: url(https://img.washingtonpost.com/rw/2010-2019/WashingtonPost/2014/08/14/Others/Images/2014-08-14/TR-goa0031408033501.jpg)">
-                <p id="headtop">Maharashtra</p>
-                <div class="top-upper-side">
-                    <p id="head-upper">28 Tours | 283 departures</p>
-                    <p id="head-upper">48180 gueste Travelled</p>
-                </div>
-            </div>
-            <div class="card-adds"
-                style="background: url(https://www.planetware.com/wpimages/2020/06/india-goa-top-attractions-mahadev-temple.jpg);">
-                <p id="headtop">Maharashtra</p>
-                <div class="top-upper-side">
-                    <p id="head-upper">28 Tours | 283 departures</p>
-                    <p id="head-upper">48180 gueste Travelled</p>
-                </div>
-            </div>
-            <div class="card-adds"
-                style="background: url(https://www.crabintheair.com/wp-content/uploads/2019/07/places-to-visit-in-goa.jpg);">
-                <p id="headtop">Maharashtra</p>
-                <div class="top-upper-side">
-                    <p id="head-upper">28 Tours | 283 departures</p>
-                    <p id="head-upper">48180 gueste Travelled</p>
-                </div>
-            </div>
-            <div class="card-adds"
-                style="background: url(https://3.bp.blogspot.com/-EBZqy2mMLT8/UsJsxiFOOUI/AAAAAAAAAss/ztHXC46ABIw/s1600/Temples-in-Goa.jpg);">
-                <p id="headtop">Maharashtra</p>
-                <div class="top-upper-side">
-                    <p id="head-upper">28 Tours | 283 departures</p>
-                    <p id="head-upper">48180 gueste Travelled</p>
-                </div>
-            </div>
-            <div class="card-adds"
-                style="background: url(https://saveandtravel.in/wp-content/uploads/2018/12/Famous-Goa-Church.jpg);">
-                <p id="headtop">Maharashtra</p>
-                <div class="top-upper-side">
-                    <p id="head-upper">28 Tours | 283 departures</p>
-                    <p id="head-upper">48180 gueste Travelled</p>
-                </div>
-            </div>
-            <div class="card-adds"
-                style="background: url(https://travelshelper.com/wp-content/uploads/2021/11/Goa-Travel-Guide-Travel-S-Helper.jpg);">
-                <p id="headtop">Maharashtra</p>
-                <div class="top-upper-side">
-                    <p id="head-upper">28 Tours | 283 departures</p>
-                    <p id="head-upper">48180 gueste Travelled</p>
-                </div>
-            </div>
+            <?php $bool = 0;
+            while ($row = pg_fetch_assoc($result2)) { ?>
+                <a href="/get-show-info/?id=<?php echo $row['id'] ?>/hellow/?tablename2=<?php echo $tablename2 ?>">
+                    <div class="card-adds" style="background: url(<?php echo $row['image'] ?>);">
+                        <p id="headtop"><?php echo $row['name'] ?></p>
+                        <div class="top-upper-side">
+                            <p id="head-upper"><?php echo $row['tours'] ?> Tours | <?php echo $row['departure'] ?> departures</p>
+                            <p id="head-upper"><?php echo $row['tourists'] ?> gueste Travelled</p>
+                        </div>
+                    </div>
+                </a>
 
+            <?php } ?>
         </div>
     </div>
     <!-- </div> -->
@@ -142,7 +82,7 @@
             <div class="sub-card">
                 <div class="header-card">
                     <div class="img-top">
-                        <img src="https://wallpaperaccess.com/full/1386109.jpg" alt="">
+                        <img src="https://www.adotrip.com/public/images/areas/master_images/5c8a36c301581-Prem_Mandir_Attractions.jpg" alt="">
                     </div>
                     <div class="card-top-right">
                         <div class="heading-sub-top">
@@ -150,7 +90,7 @@
                             <p id="Seniars">Specials </p>
                             <span><i id="heart" class="fa-regular fa-heart"></i></span>
                         </div>
-                        <h4 id="card-heading">Heading to sub </h4>
+                        <h4 id="card-heading">vrindavan</h4>
                         <div class="symbols">
 
                             <i class="fa-solid fa-plane-departure"></i>
@@ -162,23 +102,22 @@
                     </div>
                 </div>
                 <div class="bottom-card">
-                    <p><span> <i class="fa-solid fa-location-dot"></i>Travel | 10 Days</span> <span>10 States</span>
+                    <p><span> <i class="fa-solid fa-location-dot"></i>Travel | 12 Days</span> <span>10 States</span>
                         <span>16 Location</span> <span><i class="fa-solid fa-angles-right"></i></span>
                     </p>
-                    <p><span>6 Departure Cities</span> <span>6 Departure Dates 16</span> <span><i
-                                class="fa-solid fa-angles-right"></i></span></p>
+                    <p><span>8 Departure Cities</span> <span>3 Departure Dates 16</span> <span><i class="fa-solid fa-angles-right"></i></span></p>
                 </div>
                 <div class=short-card>
                     <div class="div-first">
                         <p id="rading-sy"><i style="margin-right:5px ;" class="fa-solid fa-star"></i>4</p>
                         <p id="ruppes"><i class="fa fa-inr"></i>Quick Quote</p>
-                        <button id="Enquire">Enquire Now</button>
+                        <a href="/enqure"><button id="Enquire">Enquire Now</button></a>
                     </div>
                     <div class="divsecound">
                         <p id="super">supper deal price</p>
-                        <p id="ppp"><i class="fa fa-inr"></i>656987</p>
+                        <p id="ppp"><i class="fa fa-inr"></i>566987</p>
                         <p id="pp">per persion on twing sharing</p>
-                        <button id="Views">Views Details</button>
+                        <a href="/app"><button id="Views">Views Details</button></a>
 
                     </div>
                 </div>
@@ -194,7 +133,7 @@
                             <p id="Seniars">Specials </p>
                             <span><i id="heart" class="fa-regular fa-heart"></i></span>
                         </div>
-                        <h4 id="card-heading">Heading to sub </h4>
+                        <h4 id="card-heading"> Taj Mahal </h4>
                         <div class="symbols">
 
                             <i class="fa-solid fa-plane-departure"></i>
@@ -209,20 +148,19 @@
                     <p><span> <i class="fa-solid fa-location-dot"></i>Travel | 10 Days</span> <span>10 States</span>
                         <span>16 Location</span> <span><i class="fa-solid fa-angles-right"></i></span>
                     </p>
-                    <p><span>6 Departure Cities</span> <span>6 Departure Dates 16</span> <span><i
-                                class="fa-solid fa-angles-right"></i></span></p>
+                    <p><span>6 Departure Cities</span> <span>6 Departure Dates 16</span> <span><i class="fa-solid fa-angles-right"></i></span></p>
                 </div>
                 <div class=short-card>
                     <div class="div-first">
                         <p id="rading-sy"><i style="margin-right:5px ;" class="fa-solid fa-star"></i>4</p>
                         <p id="ruppes"><i class="fa fa-inr"></i>Quick Quote</p>
-                        <button id="Enquire">Enquire Now</button>
+                        <a href="/enqure"><button id="Enquire">Enquire Now</button></a>
                     </div>
                     <div class="divsecound">
                         <p id="super">supper deal price</p>
                         <p id="ppp"><i class="fa fa-inr"></i>656987</p>
                         <p id="pp">per persion on twing sharing</p>
-                        <button id="Views">Views Details</button>
+                        <a href="/app"><button id="Views">Views Details</button></a>
 
                     </div>
                 </div>
@@ -233,49 +171,28 @@
     <div class="rating-upper">
         <p id="Hellows">Hellow INDIO</p>
         <p id="ratingq">What are you waiting for? Chalo Bag Bharo Nikal Pado!</p>
-        <div class="rating-card">
+        <div class="rating-card" id="name-kdg">
             <div class="sub-rating">
-                <div class="rating-sub">
-                    <p id="lohorating">Short family Trips <span><i class="fa-solid fa-star"></i></span></p>
-                    <p id="tamiltrip">Tamil Trips</p>
-                    <div class="comments">
-                        "Kashmir Tour Feedback : Tour code - JKHK130224/A It was a great experience travelling with
-                        Veena world. The tour was really really great and amazing. Hotel stays were really
-                        comfortable and the view, ambience was also good, specially the Hotel in Pahalgam the view
-                        was so mesmerising just loved it. Food quality was also good."
+                <?php $bool = 0;
+                while ($row = pg_fetch_assoc($result4)) { ?>
+                    <div class="rating-sub">
+                        <p id="lohorating">Short family Trips <span><i class="fa-solid fa-star"></i></span></p>
+                        <p id="tamiltrip"><?php echo $row['package_name']; ?></p>
+                        <div class="comments">
+                            "<?php echo $row['feedback']; ?>"
+                        </div>
+                        <p id="tour"><?php echo $row['customer_name'] ?></p>
+                        <p id="traveltour">Travelled in <?php echo $row['date']; ?></p>
                     </div>
-                    <p id="tour">Swapnil kadam</p>
-                    <p id="traveltour">Travelled in Feb 2024</p>
-                </div>
-                <div class="rating-sub">
-                    <p id="lohorating">Short family Trips <span><i class="fa-solid fa-star"></i></span></p>
-                    <p id="tamiltrip">Tamil Trips</p>
-                    <div class="comments">
-                        "Kashmir Tour Feedback : Tour code - JKHK130224/A It was a great experience travelling with
-                        Veena world. The tour was really really great and amazing. Hotel stays were really
-                        comfortable and the view, ambience was also good, specially the Hotel in Pahalgam the view
-                        was so mesmerising just loved it. Food quality was also good."
-                    </div>
-                    <p id="tour">Swapnil kadam</p>
-                    <p id="traveltour">Travelled in Feb 2024</p>
-                </div>
-                <div class="rating-sub">
-                    <p id="lohorating">Short family Trips <span><i class="fa-solid fa-star"></i></span></p>
-                    <p id="tamiltrip">Tamil Trips</p>
-                    <div class="comments">
-                        "Kashmir Tour Feedback : Tour code - JKHK130224/A It was a great experience travelling with
-                        Veena world. The tour was really really great and amazing. Hotel stays were really
-                        comfortable and the view, ambience was also good, specially the Hotel in Pahalgam the view
-                        was so mesmerising just loved it. Food quality was also good."
-                    </div>
-                    <p id="tour">Swapnil kadam</p>
-                    <p id="traveltour">Travelled in Feb 2024</p>
-                </div>
+                <?php
+                    $bool++;
+                    if ($bool == 3) {
+                        break;
+                    }
+                } ?>
             </div>
-
-
         </div>
-        <button id="Reviews">Read more Reviews</button>
+        <a href="/read-more-rating"><button id="Reviews">Read more Reviews</button></a>
     </div>
     <!-- ------------------------------ box liting --------------------------------------- -->
     <div class="box-container">
@@ -284,7 +201,7 @@
                 <h4 id="fly">Fly with beautiful places</h4>
                 <h4 id="fly">Indio</h4>
                 <p id="days">6 Days - 16 Days</p>
-                <button id="Book">Book now</button>
+                <a href="/"><button id="Book">Book now</button></a>
             </div>
             <div class="righ-side-top">
                 <h4 id="top-indio"><i class="fa-regular fa-eye"></i> Hellow INDIO <i class="fa-regular fa-eye"></i>
@@ -297,138 +214,60 @@
     <di class="clas">
         <h2 class="tittle-sub-cand">Incredible India</h2>
         <div class="main-container">
-            <div class="sub-card">
-                <div class="header-card">
-                    <div class="img-top">
-                        <img class="immf-sub" src="https://wallpaperaccess.com/full/1386109.jpg" alt="">
-                    </div>
-                    <div class="card-top-right">
-                        <div class="heading-sub-top">
-                            <p id="group-tour">Group Tour <span>Family</span></p>
-                            <p id="Seniars">Specials </p>
-                            <span><i id="heart" class="fa-regular fa-heart"></i></span>
-                        </div>
-                        <h4 id="card-heading">Heading to sub </h4>
-                        <div class="symbols">
+            <?php $bool = 0;
+            while ($row = pg_fetch_assoc($result3)) { ?>
 
-                            <i class="fa-solid fa-plane-departure"></i>
-                            <i class="fa-solid fa-hotel"></i>
-                            <i class="fa-solid fa-camera-retro"></i>
-                            <i class="fa-solid fa-bus"></i>
-                            <i class="fa-solid fa-briefcase"></i>
+                <div class="sub-card">
+                    <div class="header-card">
+                        <div class="img-top">
+                            <img class="immf-sub" src="<?php echo $row['image'] ?>" alt="">
+                        </div>
+                        <div class="card-top-right">
+                            <div class="heading-sub-top">
+                                <p id="group-tour">Group Tour <span>Family</span></p>
+                                <p id="Seniars">Specials </p>
+                                <span><i id="heart" class="fa-regular fa-heart"></i></span>
+                            </div>
+                            <h4 id="card-heading"><?php echo $row['name'] ?></h4>
+                            <div class="symbols">
+
+                                <i class="fa-solid fa-plane-departure"></i>
+                                <i class="fa-solid fa-hotel"></i>
+                                <i class="fa-solid fa-camera-retro"></i>
+                                <i class="fa-solid fa-bus"></i>
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="bottom-card">
-                    <p><span> <i class="fa-solid fa-location-dot"></i>Travel | 10 Days</span> <span>10 States</span>
-                        <span>16 Location</span> <span><i class="fa-solid fa-angles-right"></i></span>
-                    </p>
-                    <p><span>6 Departure Cities</span> <span>6 Departure Dates 16</span> <span><i
-                                class="fa-solid fa-angles-right"></i></span></p>
-                </div>
-                <div class=short-card>
-                    <div class="div-first">
-                        <p id="rading-sy"><i style="margin-right:5px ;" class="fa-solid fa-star"></i>4</p>
-                        <p id="ruppes"><i class="fa fa-inr"></i>Quick Quote</p>
-                        <button id="Enquire">Enquire Now</button>
+                    <div class="bottom-card">
+                        <p><span> <i class="fa-solid fa-location-dot"></i>Travel | 10 Days</span> <span>10 States</span>
+                            <span>16 Location</span> <span><i class="fa-solid fa-angles-right"></i></span>
+                        </p>
+                        <p><span>6 Departure Cities</span> <span><?php echo $row['departure'] ?>Departure Dates 16</span> <span><i class="fa-solid fa-angles-right"></i></span></p>
                     </div>
-                    <div class="divsecound">
-                        <p id="super">supper deal price</p>
-                        <p id="ppp"><i class="fa fa-inr"></i>656987</p>
-                        <p id="pp">per persion on twing sharing</p>
-                        <button id="Views">Views Details</button>
-
-                    </div>
-                </div>
-            </div>
-            <div class="sub-card">
-                <div class="header-card">
-                    <div class="img-top">
-                        <img class="immf-sub" src="https://wallpaperaccess.com/full/1386109.jpg" alt="">
-                    </div>
-                    <div class="card-top-right">
-                        <div class="heading-sub-top">
-                            <p id="group-tour">Group Tour <span>Family</span></p>
-                            <p id="Seniars">Specials </p>
-                            <span><i id="heart" class="fa-regular fa-heart"></i></span>
+                    <div class=short-card>
+                        <div class="div-first">
+                            <p id="rading-sy"><i style="margin-right:5px ;" class="fa-solid fa-star"></i>4</p>
+                            <p id="ruppes"><i class="fa fa-inr"></i>Quick Quote</p>
+                            <a href="enqure"><button id="Enquire">Enquire Now</button></a>
                         </div>
-                        <h4 id="card-heading">Heading to sub </h4>
-                        <div class="symbols">
+                        <div class="divsecound">
+                            <p id="super">supper deal price</p>
+                            <p id="ppp"><i class="fa fa-inr"></i><?php echo $row['amount']  ?></p>
+                            <p id="pp">per persion on twing sharing</p>
+                            <a href="/get-show-info/?id=<?php echo $row['id'] ?>/hellow/?tablename3=<?php echo $tablename3 ?>"> <button id="Views">Views Details</button> </a>
 
-                            <i class="fa-solid fa-plane-departure"></i>
-                            <i class="fa-solid fa-hotel"></i>
-                            <i class="fa-solid fa-camera-retro"></i>
-                            <i class="fa-solid fa-bus"></i>
-                            <i class="fa-solid fa-briefcase"></i>
                         </div>
                     </div>
                 </div>
-                <div class="bottom-card">
-                    <p><span> <i class="fa-solid fa-location-dot"></i>Travel | 10 Days</span> <span>10 States</span>
-                        <span>16 Location</span> <span><i class="fa-solid fa-angles-right"></i></span>
-                    </p>
-                    <p><span>6 Departure Cities</span> <span>6 Departure Dates 16</span> <span><i
-                                class="fa-solid fa-angles-right"></i></span></p>
-                </div>
-                <div class=short-card>
-                    <div class="div-first">
-                        <p id="rading-sy"><i style="margin-right:5px ;" class="fa-solid fa-star"></i>4</p>
-                        <p id="ruppes"><i class="fa fa-inr"></i>Quick Quote</p>
-                        <button id="Enquire">Enquire Now</button>
-                    </div>
-                    <div class="divsecound">
-                        <p id="super">supper deal price</p>
-                        <p id="ppp"><i class="fa fa-inr"></i>656987</p>
-                        <p id="pp">per persion on twing sharing</p>
-                        <button id="Views">Views Details</button>
-
-                    </div>
-                </div>
-            </div>
-            <div class="sub-card">
-                <div class="header-card">
-                    <div class="img-top">
-                        <img class="immf-sub" src="https://wallpaperaccess.com/full/1386109.jpg" alt="">
-                    </div>
-                    <div class="card-top-right">
-                        <div class="heading-sub-top">
-                            <p id="group-tour">Group Tour <span>Family</span></p>
-                            <p id="Seniars">Specials </p>
-                            <span><i id="heart" class="fa-regular fa-heart"></i></span>
-                        </div>
-                        <h4 id="card-heading">Heading to sub </h4>
-                        <div class="symbols">
-
-                            <i class="fa-solid fa-plane-departure"></i>
-                            <i class="fa-solid fa-hotel"></i>
-                            <i class="fa-solid fa-camera-retro"></i>
-                            <i class="fa-solid fa-bus"></i>
-                            <i class="fa-solid fa-briefcase"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-card">
-                    <p><span> <i class="fa-solid fa-location-dot"></i>Travel | 10 Days</span> <span>10 States</span>
-                        <span>16 Location</span> <span><i class="fa-solid fa-angles-right"></i></span>
-                    </p>
-                    <p><span>6 Departure Cities</span> <span>6 Departure Dates 16</span> <span><i
-                                class="fa-solid fa-angles-right"></i></span></p>
-                </div>
-                <div class=short-card>
-                    <div class="div-first">
-                        <p id="rading-sy"><i style="margin-right:5px ;" class="fa-solid fa-star"></i>4</p>
-                        <p id="ruppes"><i class="fa fa-inr"></i>Quick Quote</p>
-                        <button id="Enquire">Enquire Now</button>
-                    </div>
-                    <div class="divsecound">
-                        <p id="super">supper deal price</p>
-                        <p id="ppp"><i class="fa fa-inr"></i>656987</p>
-                        <p id="pp">per persion on twing sharing</p>
-                        <button id="Views">Views Details</button>
-
-                    </div>
-                </div>
-            </div>
+            <?php
+                $bool++;
+                if ($bool == 3) {
+                    break;
+                }
+            }
+            ?>
+        </div>
 
         </div>
         <!-- ----------------- 4 direction -------------------------- -->
@@ -440,222 +279,228 @@
         <div class="btn-in">
             <button class="state btn1-i">South Indio</button>
             <button class="state btn2-i">North Indio</button>
-            <button class="state btn3-i">West & central Indio</button>
-            <button class="state btn4-i">East & North East Indio</button>
+            <button class="state btn3-i">West Indio</button>
+            <button class="state btn4-i">East Indio</button>
         </div>
         <div class="click-sub">
             <div class="click-1">
                 <div class="sub-load1">
-                    <div class="sub1-load-upper">
-                        <img class="ravdi-load"
-                            src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Best-HD-Backgrounds-Photos-Download.jpg"
-                            alt="">
-                        <p class="swapnil">Have fun at Riverside County Fairgrounds</p>
-                    </div>
-                    <div class="sub1-load-lower">
-                        <img class="ravdi-load load-swa"
-                            src="https://thetouristchecklist.com/wp-content/uploads/2022/03/Jackalope-Ranch.jpg" alt="">
-                        <p class="swapnil">The Jackalope Ranch</p>
-                    </div>
+                    <a href="/zone/?name=South">
+                        <div class="sub1-load-upper">
+                            <img class="ravdi-load" src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Best-HD-Backgrounds-Photos-Download.jpg" alt="">
+                            <p class="swapnil">Have fun at Riverside County Fairgrounds</p>
+                        </div>
+                    </a>
+                    <a href="/zone/?name=South">
+                        <div class="sub1-load-lower">
+                            <img class="ravdi-load load-swa" src="https://thetouristchecklist.com/wp-content/uploads/2022/03/Jackalope-Ranch.jpg" alt="">
+                            <p class="swapnil">The Jackalope Ranch</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="sub-load2">
-                    <div class="sub2-load-upper">
-                        <img class="ravdi-load load-swa2"
-                            src="https://assets.palmspringslife.com/wp-content/uploads/2023/11/17135706/EmpirePoloClub-1024x683.jpg"
-                            alt="">
-                        <p class="swapnil">Empire Polo Club</p>
-                    </div>
-                    <div class="sub2-load-lowar">
-                        <img class="ravdi-load load-swa3"
-                            src="https://media-cdn.tripadvisor.com/media/photo-o/0d/9e/79/99/empire-polo-club-desert.jpg"
-                            alt="">
-                        <p class="swapnil">location Indio</p>
-                    </div>
+                    <a href="/zone/?name=South">
+                        <div class="sub2-load-upper">
+                            <img class="ravdi-load load-swa2" src="https://assets.palmspringslife.com/wp-content/uploads/2023/11/17135706/EmpirePoloClub-1024x683.jpg" alt="">
+                            <p class="swapnil">Empire Polo Club</p>
+                        </div>
+                    </a>
+                    <a href="/zone/?name=South">
+                        <div class="sub2-load-lowar">
+                            <img class="ravdi-load load-swa3" src="https://media-cdn.tripadvisor.com/media/photo-o/0d/9e/79/99/empire-polo-club-desert.jpg" alt="">
+                            <p class="swapnil">location Indio</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="sub-load3">
-                    <div class="sub1-load-upper">
-                        <img class="ravdi-load load-swa-3"
-                            src="https://www.whyweseek.com/wp-content/uploads/2018/03/Golden-Temple-at-Night-Amritsar-1024x683.jpg"
-                            alt="">
-                        <p class="swapnil">Golden Temple</p>
-                    </div>
-                    <div class="sub1-load-lower">
-                        <img class="ravdi-load "
-                            src="https://i.pinimg.com/originals/51/31/ee/5131ee7608391d2c6abd3bfa12f1ff80.jpg" alt="">
-                        <p class="swapnil">Udaipur</p>
-                    </div>
+                    <a href="/zone/?name=South">
+                        <div class="sub1-load-upper">
+                            <img class="ravdi-load load-swa-3" src="https://www.whyweseek.com/wp-content/uploads/2018/03/Golden-Temple-at-Night-Amritsar-1024x683.jpg" alt="">
+                            <p class="swapnil">Golden Temple</p>
+                        </div>
+                    </a>
+                    <a href="/zone/?name=South">
+                        <div class="sub1-load-lower">
+                            <img class="ravdi-load " src="https://i.pinimg.com/originals/51/31/ee/5131ee7608391d2c6abd3bfa12f1ff80.jpg" alt="">
+                            <p class="swapnil">Udaipur</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="sub-load4">
-                    <div class="sub4-load-upper">
-                        <img class="ravdi-load load4-swa"
-                            src="https://www.global-gallivanting.com/wp-content/uploads/2016/02/IMG_20160214_145051-1024x1024.jpg"
-                            alt="">
-                        <p class="swapnil">Goa Indio</p>
-                    </div>
-
+                    <a href="/zone/?name=South">
+                        <div class="sub4-load-upper">
+                            <img class="ravdi-load load4-swa" src="https://www.global-gallivanting.com/wp-content/uploads/2016/02/IMG_20160214_145051-1024x1024.jpg" alt="">
+                            <p class="swapnil">Goa Indio</p>
+                        </div>
+                    </a>
                 </div>
             </div>
 
             <div class="click-2">
                 <div class="sub-load1">
-                    <div class="sub1-load-upper">
-                        <img class="ravdi-load"
-                            src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/07/shutterstock_115227475.jpg"
-                            alt="">
-                        <p class="swapnil">Kashmir</p>
-                    </div>
-                    <div class="sub1-load-lower">
-                        <img class="ravdi-load load-swa"
-                            src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/07/131.jpg" alt="">
-                        <p class="swapnil"> Dharamshala – Tibetan Charm
-                        </p>
-                    </div>
+                    <a href="/zone/?name=North">
+                        <div class="sub1-load-upper">
+                            <img class="ravdi-load" src="https://californiathroughmylens.com/wp-content/uploads/2021/01/Indio-Hills-Badlands-32.jpg" alt="">
+                            <p class="swapnil">Hills </p>
+                        </div>
+                    </a>
+                    <a href="/zone/?name=North">
+                        <div class="sub1-load-lower">
+                            <img class="ravdi-load load-swa" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/07/131.jpg" alt="">
+                            <p class="swapnil"> Dharamshala – Tibetan Charm
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="sub-load2">
-                    <div class="sub2-load-upper">
-                        <img class="ravdi-load load-swa2"
-                            src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/07/Varanasi.jpg" alt="">
-                        <p class="swapnil">Varanasi A Peace Seeker’s Haven </p>
-                    </div>
-                    <div class="sub2-load-lowar">
-                        <img class="ravdi-load load-swa3"
-                            src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/07/Tomb-of-Nithar-at-Khusro-bagh-Allahabad.jpg"
-                            alt="">
-                        <p class="swapnil">Allahabad UP’s Pride
-                        </p>
-                    </div>
+                    <a href="/zone/?name=North">
+                        <div class="sub2-load-upper">
+                            <img class="ravdi-load load-swa2" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/07/Varanasi.jpg" alt="">
+                            <p class="swapnil">Varanasi A Peace Seeker’s Haven </p>
+                        </div>
+                    </a>
+                    <a href="/zone/?name=North">
+                        <div class="sub2-load-lowar">
+                            <img class="ravdi-load load-swa3" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/07/Tomb-of-Nithar-at-Khusro-bagh-Allahabad.jpg" alt="">
+                            <p class="swapnil">Allahabad UP’s Pride
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="sub-load3">
-                    <div class="sub1-load-upper">
-                        <img class="ravdi-load load-swa-3"
-                            src="https://www.travelescape.in/wp-content/uploads/2019/06/golden-temple-397886__340.jpg"
-                            alt="">
-                        <p class="swapnil">Golden Temple</p>
-                    </div>
-                    <div class="sub1-load-lower">
-                        <img class="ravdi-load "
-                            src="https://i.pinimg.com/originals/51/31/ee/5131ee7608391d2c6abd3bfa12f1ff80.jpg" alt="">
-                        <p class="swapnil">Udaipur</p>
-                    </div>
+                    <a href="/zone/?name=North">
+                        <div class="sub1-load-upper">
+                            <img class="ravdi-load load-swa-3" src="https://www.travelescape.in/wp-content/uploads/2019/06/golden-temple-397886__340.jpg" alt="">
+                            <p class="swapnil">Golden Temple</p>
+                        </div>
+                    </a>
+                    <a href="/zone/?name=North">
+                        <div class="sub1-load-lower">
+                            <img class="ravdi-load " src="https://i.pinimg.com/originals/51/31/ee/5131ee7608391d2c6abd3bfa12f1ff80.jpg" alt="">
+                            <p class="swapnil">Udaipur</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="sub-load4">
-                    <div class="sub4-load-upper">
-                        <img class="ravdi-load load4-swa"
-                            src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/07/Amritsar.jpg" alt="">
-                        <p class="swapnil">Amritsar – A Must Visit City
-                        </p>
-                    </div>
-
+                    <a href="/zone/?name=North">
+                        <div class="sub4-load-upper">
+                            <img class="ravdi-load load4-swa" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2017/07/Amritsar.jpg" alt="">
+                            <p class="swapnil">Amritsar – A Must Visit City
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="click-3">
 
                 <div class="sub-load1">
-                    <div class="sub1-load-upper">
-                        <img class="ravdi-load"
-                            src="https://lp-cms-production.imgix.net/2022-03/LPI-21-704.jpg?auto=format&q=75&w=1024"
-                            alt="">
-                        <p class="swapnil">Jaisalmer, Rajasthan
-                        </p>
-                    </div>
-                    <div class="sub1-load-lower">
-                        <img class="ravdi-load load-swa"
-                            src="https://lp-cms-production.imgix.net/2023-09/shutterstockRF200702498.jpg?auto=format&q=75&w=1024"
-                            alt="">
-                        <p class="swapnil">Darjeeling, West Bengal
-                        </p>
-                    </div>
+                    <a href="/zone/?name=West">
+                        <div class="sub1-load-upper">
+                            <img class="ravdi-load" src="https://lp-cms-production.imgix.net/2022-03/LPI-21-704.jpg?auto=format&q=75&w=1024" alt="">
+                            <p class="swapnil">Jaisalmer, Rajasthan
+                            </p>
+                        </div>
+                    </a>
+                    <a href="/zone/?name=West">
+                        <div class="sub1-load-lower">
+                            <img class="ravdi-load load-swa" src="https://lp-cms-production.imgix.net/2023-09/shutterstockRF200702498.jpg?auto=format&q=75&w=1024" alt="">
+                            <p class="swapnil">Darjeeling, West Bengal
+                            </p>
+                        </div>
+                    </a>
                 </div>
                 <div class="sub-load2">
-                    <div class="sub2-load-upper">
-                        <img class="ravdi-load load-swa2"
-                            src="https://lp-cms-production.imgix.net/2023-09/GettyRF163243396.jpg?auto=format&q=75&w=1024"
-                            alt="">
-                        <p class="swapnil">Mysuru (Mysore), Karnataka
-                        </p>
-                    </div>
-                    <div class="sub2-load-lowar">
-                        <img class="ravdi-load load-swa3"
-                            src="https://www.tripsavvy.com/thmb/2hR1VF0fk5VTp9H1kLFxBn9zI3g=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-603222582-59228d0c3df78cf5fa656d38.jpg"
-                            alt="">
-                        <p class="swapnil">Delhi</p>
-                    </div>
+                    <a href="/zone/?name=West">
+                        <div class="sub2-load-upper">
+                            <img class="ravdi-load load-swa2" src="https://lp-cms-production.imgix.net/2023-09/GettyRF163243396.jpg?auto=format&q=75&w=1024" alt="">
+                            <p class="swapnil">Mysuru (Mysore), Karnataka
+                            </p>
+                        </div>
+                    </a>
+                    <a href="/zone/?name=West">
+                        <div class="sub2-load-lowar">
+                            <img class="ravdi-load load-swa3" src="https://www.tripsavvy.com/thmb/2hR1VF0fk5VTp9H1kLFxBn9zI3g=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-603222582-59228d0c3df78cf5fa656d38.jpg" alt="">
+                            <p class="swapnil">Delhi</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="sub-load3">
-                    <div class="sub1-load-upper">
-                        <img class="ravdi-load load-swa-3"
-                            src="https://www.whyweseek.com/wp-content/uploads/2018/03/Golden-Temple-at-Night-Amritsar-1024x683.jpg"
-                            alt="">
-                        <p class="swapnil">Dalhousie</p>
-                    </div>
-                    <div class="sub1-load-lower">
-                        <img class="ravdi-load "
-                            src="https://www.tripsavvy.com/thmb/7Vza40yYMfo5uNQlVac08nEHt5Y=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-151731894-592288415f9b58f4c06e4dbf.jpg"
-                            alt="">
-                        <p class="swapnil">Varanasi</p>
-                    </div>
+                    <a href="/zone/?name=West">
+                        <div class="sub1-load-upper">
+                            <img class="ravdi-load load-swa-3" src="https://www.whyweseek.com/wp-content/uploads/2018/03/Golden-Temple-at-Night-Amritsar-1024x683.jpg" alt="">
+                            <p class="swapnil">Dalhousie</p>
+                        </div>
+                    </a>
+                    <a href="/zone/?name=West">
+                        <div class="sub1-load-lower">
+                            <img class="ravdi-load " src="https://www.tripsavvy.com/thmb/7Vza40yYMfo5uNQlVac08nEHt5Y=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-151731894-592288415f9b58f4c06e4dbf.jpg" alt="">
+                            <p class="swapnil">Varanasi</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="sub-load4">
-                    <div class="sub4-load-upper">
-                        <img class="ravdi-load load4-swa"
-                            src="https://www.travelwithcg.com/wp-content/uploads/2021/02/Ganesh-Pol-scaled.jpg" alt="">
-                        <p class="swapnil">jaipur</p>
-                    </div>
 
+                <div class="sub-load4">
+                    <a href="/zone/?name=West">
+                        <div class="sub4-load-upper">
+                            <img class="ravdi-load load4-swa" src="https://www.travelwithcg.com/wp-content/uploads/2021/02/Ganesh-Pol-scaled.jpg" alt="">
+                            <p class="swapnil">jaipur</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="click-4">
                 <div class="sub-load1">
-                    <div class="sub1-load-upper">
-                        <img class="ravdi-load"
-                            src="https://static.trip101.com/paragraph_media/pictures/002/645/607/large/big-prizes-1661510745.jpg?1661512495"
-                            alt="">
-                        <p class="swapnil">Have fun at Riverside County Fairgrounds</p>
-                    </div>
-                    <div class="sub1-load-lower">
-                        <img class="ravdi-load load-swa"
-                            src="https://thetouristchecklist.com/wp-content/uploads/2022/03/Jackalope-Ranch.jpg" alt="">
-                        <p class="swapnil">The Jackalope Ranch</p>
-                    </div>
+                    <a href="/zone/?name=East">
+                        <div class="sub1-load-upper">
+                            <img class="ravdi-load" src="https://static.trip101.com/paragraph_media/pictures/002/645/607/large/big-prizes-1661510745.jpg?1661512495" alt="">
+                            <p class="swapnil">Have fun at Riverside County Fairgrounds</p>
+                        </div>
+                    </a>
+                    <a href="/zone/?name=East">
+                        <div class="sub1-load-lower">
+                            <img class="ravdi-load load-swa" src="https://thetouristchecklist.com/wp-content/uploads/2022/03/Jackalope-Ranch.jpg" alt="">
+                            <p class="swapnil">The Jackalope Ranch</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="sub-load2">
-                    <div class="sub2-load-upper">
-                        <img class="ravdi-load load-swa2"
-                            src="https://assets.palmspringslife.com/wp-content/uploads/2023/11/17135706/EmpirePoloClub-1024x683.jpg"
-                            alt="">
-                        <p class="swapnil">Empire Polo Club</p>
-                    </div>
-                    <div class="sub2-load-lowar">
-                        <img class="ravdi-load load-swa3"
-                            src="https://media-cdn.tripadvisor.com/media/photo-o/0d/9e/79/99/empire-polo-club-desert.jpg"
-                            alt="">
-                        <p class="swapnil">location Indio</p>
-                    </div>
+                    <a href="/zone/?name=East">
+                        <div class="sub2-load-upper">
+                            <img class="ravdi-load load-swa2" src="https://assets.palmspringslife.com/wp-content/uploads/2023/11/17135706/EmpirePoloClub-1024x683.jpg" alt="">
+                            <p class="swapnil">Empire Polo Club</p>
+                        </div>
+                    </a>
+                    <a href="/zone/?name=East">
+                        <div class="sub2-load-lowar">
+                            <img class="ravdi-load load-swa3" src="https://media-cdn.tripadvisor.com/media/photo-o/0d/9e/79/99/empire-polo-club-desert.jpg" alt="">
+                            <p class="swapnil">location Indio</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="sub-load3">
-                    <div class="sub1-load-upper">
-                        <img class="ravdi-load load-swa-3"
-                            src="https://www.whyweseek.com/wp-content/uploads/2018/03/Golden-Temple-at-Night-Amritsar-1024x683.jpg"
-                            alt="">
-                        <p class="swapnil">Golden Temple</p>
-                    </div>
-                    <div class="sub1-load-lower">
-                        <img class="ravdi-load "
-                            src="https://i.pinimg.com/originals/51/31/ee/5131ee7608391d2c6abd3bfa12f1ff80.jpg" alt="">
-                        <p class="swapnil">Udaipur</p>
-                    </div>
+                    <a href="/zone/?name=East">
+                        <div class="sub1-load-upper">
+                            <img class="ravdi-load load-swa-3" src="https://www.whyweseek.com/wp-content/uploads/2018/03/Golden-Temple-at-Night-Amritsar-1024x683.jpg" alt="">
+                            <p class="swapnil">Golden Temple</p>
+                        </div>
+                    </a>
+                    <a href="/zone/?name=East">
+                        <div class="sub1-load-lower">
+                            <img class="ravdi-load " src="https://i.pinimg.com/originals/51/31/ee/5131ee7608391d2c6abd3bfa12f1ff80.jpg" alt="">
+                            <p class="swapnil">Udaipur</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="sub-load4">
-                    <div class="sub4-load-upper">
-                        <img class="ravdi-load load4-swa"
-                            src="https://www.global-gallivanting.com/wp-content/uploads/2016/02/IMG_20160214_145051-1024x1024.jpg"
-                            alt="">
-                        <p class="swapnil">Goa Indio</p>
-                    </div>
-
+                    <a href="/zone/?name=East">
+                        <div class="sub4-load-upper">
+                            <img class="ravdi-load load4-swa" src="https://www.global-gallivanting.com/wp-content/uploads/2016/02/IMG_20160214_145051-1024x1024.jpg" alt="">
+                            <p class="swapnil">Goa Indio</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
 
-    
-<?php include('./views/layouts/footer.php') ?>
+
+        <?php include('./views/layouts/footer.php') ?>

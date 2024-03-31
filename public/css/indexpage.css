@@ -1,5 +1,9 @@
 
-
+a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
 
 *{
     margin: 0;
@@ -112,6 +116,7 @@
     border: 1px solid rgba(50, 50, 114, 0.792);
     background-color: rgb(36, 36, 70);
     height: 480px;
+    /* height: 900px; */
     text-align: center;
 }
 
@@ -134,6 +139,9 @@
     border-radius: 8px;
 }
 
+.rating-card p{
+    font-size: 13px;
+}
 
 .card-r{
     width: 30%;
@@ -201,7 +209,7 @@
 
 #tour{
     margin-top: 15px;
-    margin-right: 260px;
+    margin-right: 200px;
     font-weight: bold;
     font-size: 18px;
     opacity: 0.9;
@@ -211,7 +219,14 @@
    font-size: 15px;
 }
  
+.rating-card p{
+    font-size: 13px;
+}
 
+#name-kdg 
+{
+    font-size: 14px;
+}
 /* ---------------------------------------- short cards ---------------------------------------------- */
 
 .classwapn{
@@ -282,7 +297,7 @@
     background-color: rgb(208, 212, 215);
     border-radius: 10px;
     margin-left: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     margin-right: 8px;
     margin-top: 160px;
     padding: 5px;
@@ -292,7 +307,9 @@
     padding: 0;
 }
  
-
+.top-upper-side p{
+    font-size: 12px;
+}
 
 /* #headtop:hover{
     /* box-shadow: 3px 3px 6px black; */
@@ -511,11 +528,13 @@ img {
 
 
 #Enquire{
+    margin-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 13px;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
@@ -536,6 +555,7 @@ img {
 }
 
 #pp{
+    font-size: 12px;
     margin: 0;
     padding: 0;
 }
@@ -547,7 +567,9 @@ img {
     color: brown;
 }
 
-
+.bottom-card p{
+    font-size: 14px;
+}
 /* ------------------------------------------- BOX 3 DESIGN ---------------------------------------- */
 
 .clas{
@@ -699,17 +721,18 @@ img {
 }
 
 #ruppes{
-    font-size: 22px;
+    font-size: 20px;
     color: rgb(72, 99, 206);
     margin-top: 20px;
     margin-left: 20px;
 }
 
 #super{
+    margin-top: 10px;
     /* text-align: end; */
     font-weight: bold;
     color: rgb(49, 230, 25);
-    font-size: 17px;
+    font-size: 15px;
 }
 
 
@@ -736,6 +759,7 @@ img {
     /* border: 1px solid ; */
     color: black;
     border-radius: 5px;
+    margin-top: 15px;
 }
 
 #pp{
@@ -945,4 +969,15 @@ img {
 
 .load4-swa{
     height: 435px;
+}
+
+
+.comments{
+    margin: 10px;
+    height: 120px;
+    overflow: scroll;
+    border-radius:0;
+    padding: 10px;
+    /* border: 1px solid black; */
+    background-color: blanchedalmond;
 }

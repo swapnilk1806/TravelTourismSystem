@@ -79,3 +79,26 @@ btn4s.addEventListener('click', function () {
     cl3.style.display = 'none';
     console.log('4 helow');
 })
+
+
+
+// ==============================================Headers ========================= 
+
+const heade_parts = document.querySelector('.load-tp-hellow');
+const app_sdk = document.querySelector('.customixed');
+
+var on = 0;
+app_sdk.addEventListener('click', function name(params) {
+    if (on == 0) {
+        console.log('on');
+        heade_parts.style.display = 'block';
+        on = 1;
+    } else {
+        console.log('off');
+        heade_parts.style.display = 'none';
+        on = 0;
+    }
+})
+
+// 1 is true, 0 is false
+

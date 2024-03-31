@@ -1,0 +1,167 @@
+
+
+.hellowp{
+    margin-top: 100px !important;
+    /* border: 1px solid black; */
+    width: 85%;
+    /* margin-left: 100px; */
+    /* height: 700px; */
+    margin: auto;
+}
+
+.hellowp h3{
+    font-size: 21px;
+    margin-left: 20px !important;
+    margin-bottom: 0 !important;
+    color: rgb(31, 30, 30) !important;
+}
+
+.hellowp .seats{
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(39, 37, 37);
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.depure-setas{
+    margin-top: 0;
+}
+
+
+.hellowp .one{
+    font-size: 17px;
+    margin-left: 100px;
+    /* margin-top: 40px; */
+}
+
+
+.all-departure button{
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 14px;
+     padding: 9px 40px;
+     margin-left: 100px;
+     border-radius: 15px;
+     outline: none;
+     border: 1px solid rgb(60, 15, 223);
+     /* font-weight: bold; */
+}
+
+.all-departure button i{
+    margin-right: 10px;
+    color: blue;
+    margin-left: 0;
+    padding: 5px;
+}
+
+.depure-setas{
+    display: flex;
+    /* border: 1px solid black; */
+    margin-left: 100px;
+    width: 50%;
+    /* margin-top: 40px; */
+    height: 250px;
+}
+
+
+.head-card{
+    /* border-radius: 10px; */
+    /* border: 1px solid black; */
+    height: 90px;
+    margin: 15px;
+    width: 90px;
+    display: flex
+}
+
+.head-left{
+    border-radius: 5px;
+    /* border: 1px solid blueviolet; */
+    width: 30%;
+    background-color: rgb(79, 73, 73);
+}
+
+.head-right{
+    background-color: rgb(35, 128, 35);
+    border-radius: 5px;
+    /* border: 1px solid red; */
+    width: 65%;
+    margin-left: 4px;
+}
+
+.head-left p{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px !important;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.head-right p{
+    color: white;
+    font-weight: bold;
+    margin-top: 8px !important;
+    margin: 0;
+    text-align: center;
+}
+
+.yellow{
+    background-color: rgb(222, 222, 22);
+}
+
+.red{
+    background-color: rgb(176, 100, 100);
+}
+
+.blue{
+    background-color: rgb(92, 92, 168);
+}
+
+
+.condition{
+    margin-left: 100px;
+}
+
+.condition li{
+    font-size: 12px;
+    margin: 0;
+}
+
+#all-p{
+  margin-left: 100px !important;
+  margin-top: 50px;
+  /* font-weight: bold; */
+  color: rgb(126, 110, 110);
+}
+
+#all-p span{
+    color: red;
+}
+
+
+.h3-swa{
+    margin-top: 20px !important;
+    margin-left: 100px !important;
+}
+
+.h3-swa span{
+    font-size: 12px !important;
+}
+
+.locations{
+    /* border: 1px solid black; */
+    margin-left: 100px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.locations li{
+    margin: 20px;
+}
+
+.locations li::marker{
+    color: blueviolet;
+}

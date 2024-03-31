@@ -5,10 +5,11 @@
 <?php include('./views/layouts/header.php') ?>
 <?php
 
-$tablename= 'middle_card';//$_GET['tablename'];
+$type_name = $_GET['name'];
+echo $type_name;
 
 require('./database_connect.php');
-$query = "SELECT * FROM public.$tablename";
+$query = "SELECT * FROM public.middle_card where type = '$type_name'";
 $result = pg_query($conn, $query);
 
 ?>

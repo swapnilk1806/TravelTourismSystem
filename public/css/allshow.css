@@ -3,15 +3,17 @@
 
 .short-loader {
     display: flex;
-    /* border: 1px solid #ff0000; */
+    /* border: 1px solid #292727; */
     height: 220px;
     width: 890px;
+    border-radius: 10px;
     margin: auto;
     margin-top: 50px !important;
 }
 
 
 .img-short {
+    /* border: 1px solid black; */
     width: 30%;
     height: 100%;
     /* border: 1px solid black; */
@@ -141,4 +143,8 @@ img {
     padding: 10px 66px;
     margin-top: 6px;
     margin-left: 25px ;
+}
+
+.headaer-logo{
+    margin-bottom: 100px;
 }

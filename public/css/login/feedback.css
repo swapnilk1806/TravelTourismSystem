@@ -1,0 +1,39 @@
+
+
+.login textarea{
+    outline: none;
+    border: none;
+}
+
+.text-p{
+    outline: none;
+}
+
+
+.rating-upper {
+    border: 1px solid rgba(50, 50, 114, 0.792);
+    background-color: rgb(36, 36, 70);
+    text-align: center;
+    height: 1000px !important;
+}
+
+.rating-card {
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.feed-back-tour {
+    text-align: center;
+    margin: 35px;
+    color: white;
+    text-shadow: 1px 1px 1px yellow;
+}
+
+.sub-rating {
+    /* display: flex !important; */
+    flex-wrap: wrap !important;
+}
+
+.rating-sub {
+    margin-top: 30px;
+}

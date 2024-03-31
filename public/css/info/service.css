@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    /* padding:5px; */
+}
+
+.service-main-c {
+    display: flex;
+}
+
+.services-info {
+    background-color: rgb(216, 200, 200);
+}
+
+.services-info li {
+
+    margin-top: 10px;
+}
+
+.services-info span {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.logo-service {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+}
+
+.services {
+    font-weight: bold;
+    text-align: center;
+    font-size: 27px;
+    margin-top: 30px;
+    color: blueviolet;
+    /* text-shadow: 1px 1px 2px black; */
+    margin-bottom: 40px;
+}
+
+.logo-service {
+    margin-left: 30px;
+}
+
+.imf-info {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.services-info {
+    padding: 30px;
+    border: 1px solid red;
+    width: 950px;
+    margin-left: 10px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}

@@ -1,12 +1,34 @@
-
 /* -------------------------------------------------------header part------------------------- */
+* {
+    /* font-family: "Noto Serif", serif !important; */
+    font-optical-sizing: auto;
+}
 
-*{
+.middle-sub-part a {
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+* {
+    cursor: pointer;
     margin: 0;
     padding: 0;
 }
 
-.cont-saw{
+/* .header-top{ */
+/* position: sticky;
+    top: 0;
+    } */
+
+.cont-saw {
     background-color: rgb(15, 8, 8);
     justify-content: space-around;
     display: flex;
@@ -14,34 +36,33 @@
     /* border: 1px solid red; */
 }
 
-.logo-phoyo{
-
+.logo-phoyo {
     text-align: center;
-    width:25%;
-  /* border: 1px solid black; */
+    width: 25%;
+    /* border: 1px solid black; */
 }
 
-.input-search{
+.input-search {
     /* margin: auto; */
     padding-left: 45px;
     width: 40%;
     /* border: 1px solid black; */
 }
 
-.i-logo{
+.i-logo {
     width: 37%;
     /* border: 1px solid black; */
 }
 
 /* .logo-phoyo h1{
     /* font-family: k; */
-    /* font-family: "Mystery Quest", system-ui;
+/* font-family: "Mystery Quest", system-ui;
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
     font-weight: bold;
     margin-top: 23px;
-} */ 
+} */
 
 /* .mystery-quest-regular {
     font-family: "Mystery Quest", system-ui;
@@ -50,68 +71,68 @@
   }
    */
 
-   .input-search input{
+.input-search input {
     text-align: center;
-      width: 88%;
-      height: 45px;
-      /* text-shadow: 1px 1px 1px rgb(18, 15, 223); */
-      padding: 0;
-      border-radius: 15px;
-      outline: none;
-      color: black;
-      border: none;
-      margin-top: 14px;
-      /* color: green; */
-      font-weight: bold;
-      /* color: white; */
-      font-family:Georgia, 'Times New Roman', Times, serif;
-   }
+    width: 88%;
+    height: 45px;
+    /* text-shadow: 1px 1px 1px rgb(18, 15, 223); */
+    padding: 0;
+    border-radius: 15px;
+    outline: none;
+    color: black;
+    border: none;
+    margin-top: 14px;
+    /* color: green; */
+    font-weight: bold;
+    /* color: white; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 
-   .upper-i-logo{
+.upper-i-logo {
     margin-top: 15px;
     display: flex;
-     justify-content: space-around;
-   }
+    justify-content: space-around;
+}
 
-.upper-i-logo span{
+.upper-i-logo span {
     color: white;
 }
-   .lower-i-logo{
 
+.lower-i-logo {
     display: flex;
     /* justify-content: space-around; */
-   }
+}
 
-.call{
+.call {
     color: white;
     margin-top: 4px;
     margin-left: 55px;
 }
 
-.Wishlist{
+.Wishlist {
     color: white;
     margin-top: 4px;
     margin-left: 95px;
 }
 
-.Notifications{
+.Notifications {
     color: white;
     margin-top: 4px;
     margin-left: 70px;
 }
 
-.Sign{
+.Sign {
     color: white;
     margin-top: 4px;
-    margin-left: 65px;
+    margin-left: 60px;
 }
 
-.header-left-sub{
+.header-left-sub {
     background-color: rgb(30, 30, 38);
 }
 
-.middle-sub-part{
+.middle-sub-part {
     color: white;
     width: 78%;
     margin: auto;
@@ -121,19 +142,159 @@
     justify-content: space-around;
 }
 
-.middle-sub-part p{
+.middle-sub-part p {
     padding-top: 8px;
     padding-bottom: 8px;
 }
 
-.middle-sub-part span{
+/* .middle-sub-part span{
     /* position: absolute; */
-    /* top: 8px; */
-    /* margin-top: 6px; */
-}
+/* top: 8px; */
+/* margin-top: 6px; */
+/* }  */
 
-.middle-sub-part button{
+.middle-sub-part button {
     background: transparent;
     border: none;
     color: white;
+}
+
+/* === parting ========================  */
+
+
+/* .header-part{
+    padding: 13px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(36, 173, 173);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+ } */
+
+.load-tp-hellow {
+    display: none;
+    position: absolute;
+    top: 125px;
+    left: 20%;
+    background-color: white;
+}
+
+
+.load-sub-info1 {
+    /* display: flex !important; */
+    display: flex;
+    height: 430px;
+    width: 900px;
+    margin-top: 0 !important;
+    margin: auto;
+
+    border: 1px solid black;
+    border-top: none;
+    border-radius: 0 10px 0 10px;
+}
+
+.left-hand-side-lod {
+    width: 65%;
+    height: 100%;
+}
+
+.head-sub {
+    display: inline-block;
+    /* text-align: center; */
+    position: relative;
+    left: 60px;
+    color: rgba(23, 145, 145, 0.861);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#logocand {
+    position: relative;
+    left: 30px;
+    top: 20px;
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+
+.logodh {
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+
+.logodh span {
+    margin-right: 25px;
+}
+
+
+.right-hand-side-lod {
+    width: 30%;
+}
+
+.upper-side {
+    height: 40%;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+img {
+    width: 75%;
+    /* height: 120px; */
+    margin: 0;
+    border-radius: 15px;
+}
+
+.lower-side {
+    margin-top: 34px;
+}
+
+#logosd {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    opacity: 0.8;
+    margin: 0;
+    font-size: 14px;
+    color: rgb(97, 93, 184);
+}
+
+
+
+/* --------------------------------- swapnil -------------------------- */
+
+
+/* ----------------- heade left side ------------- / */
+
+.cont {
+    position: absolute;
+    left: 390px;
+    top: 30px;
+    display: none;
+    margin-top: 100px !important;
+    margin: auto;
+    border: 1px solid black;
+    width: 200px;
+    height: 370px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.cont p {
+    color: aqua;
+    text-shadow: 1px 1px 1px black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 27%;
+}
+
+.cont p:hover {
+    text-shadow: 2px 2px 2px black;
 }
